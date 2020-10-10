@@ -21,7 +21,7 @@ namespace PracticalLinq
             var query = from c in customerList
                         where c.CustomerId == customerId
                         select c;
-            CustomerFound = query.First();
+            CustomerFound = query.FirstOrDefault();
             return CustomerFound;
         }
         public List<Customer> Retrieve()

@@ -22,8 +22,8 @@ namespace PracticalLinq.Tests
             var result = repository.Find(customerList, 2);
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(result);
             Assert.AreEqual(2, result.CustomerId);
-            Assert.AreEqual("Srujana", result.LastName);
-            Assert.AreEqual("Jami", result.FirstName);
+            Assert.AreEqual("Jayal", result.LastName);
+            Assert.AreEqual("Samahar", result.FirstName);
         }
 
         [TestMethod()]
